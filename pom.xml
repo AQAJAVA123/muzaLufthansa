@@ -5,60 +5,51 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>Lufthansa_2</artifactId>
+    <artifactId>United</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <selenium>4.21.0</selenium>
+        <testng>7.10.1</testng>
+        <maven-compiler>3.10.1</maven-compiler>
+        <maven-surefire>3.2.5</maven-surefire>
     </properties>
 
     <dependencies>
-
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>4.21.0</version>
+            <version>${selenium}</version>
         </dependency>
-
 
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>7.10.1</version>
+            <version>${testng}</version>
             <scope>test</scope>
-        </dependency>
-
-
-        <dependency>
-            <groupId>io.github.bonigarcia</groupId>
-            <artifactId>webdrivermanager</artifactId>
-            <version>5.8.0</version>
         </dependency>
     </dependencies>
 
     <build>
         <plugins>
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.10.1</version>
+                <version>${maven-compiler}</version>
                 <configuration>
                     <source>11</source>
                     <target>11</target>
                 </configuration>
             </plugin>
 
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.2.5</version>
+                <version>${maven-surefire}</version>
             </plugin>
         </plugins>
     </build>
-
-
 </project>

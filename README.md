@@ -1,6 +1,6 @@
 # Lufthansa Automation Project
 
-Автоматизация функциональных тестов сайта [Lufthansa](https://www.lufthansa.com/xx/en/homepage) с использованием Java, Selenium и TestNG.
+Автоматизация функциональных тестов сайта [United](https://www.united.com/en/us) с использованием Java, Selenium и TestNG.
 
 ---
 
