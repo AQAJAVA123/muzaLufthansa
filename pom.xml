@@ -14,8 +14,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <selenium>4.33.0</selenium>
         <testng>7.10.1</testng>
-        <maven-compiler>3.10.1</maven-compiler>
-        <maven-surefire>3.2.5</maven-surefire>
+        <maven-compiler>3.14.0</maven-compiler>
+        <maven-surefire>3.5.3</maven-surefire>
     </properties>
 
     <dependencies>
