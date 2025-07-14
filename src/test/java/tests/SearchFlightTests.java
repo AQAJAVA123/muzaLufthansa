@@ -14,8 +14,6 @@ import static org.testng.Assert.assertTrue;
 
 public class SearchFlightTests extends BaseTest {
     private HomePage homePage;
-    public static final String FROM_CITY = "Frankfurt";
-    public static final String TO_CITY = "Albany";
     public static final String AUGUST = "August";
     public static final String TEST_RETURN_DATE = "2025-08-25";
     public static final String TEST_DEPARTURE_DATE = "2025-08-07";
@@ -27,8 +25,6 @@ public class SearchFlightTests extends BaseTest {
 
     @Test
     public void testValidFlightSearch() {
-        homePage.enterFrom(FROM_CITY);
-        homePage.enterTo(TO_CITY);
         homePage.enterDepartureDate(AUGUST, TEST_DEPARTURE_DATE);
         homePage.enterReturnDate(AUGUST, TEST_RETURN_DATE);
         homePage.clickSearch();
@@ -39,8 +35,6 @@ public class SearchFlightTests extends BaseTest {
 
     @Test
     public void testSearchWithoutDates() {
-        homePage.enterFrom(FROM_CITY);
-        homePage.enterTo(TO_CITY);
         driver.findElement(By.id("ReturnDate")).click();
         driver.findElement(By.id("ReturnDate")).sendKeys(Keys.DELETE);
         homePage.clickSearch();
@@ -50,8 +44,7 @@ public class SearchFlightTests extends BaseTest {
 
     @Test
     public void testReturnDateBeforeDeparture() {
-        homePage.enterFrom(FROM_CITY);
-        homePage.enterTo(TO_CITY);
+
         homePage.enterDepartureDate(AUGUST, TEST_DEPARTURE_DATE);
         homePage.enterReturnDate(AUGUST, TEST_RETURN_DATE);
         homePage.clickSearch();

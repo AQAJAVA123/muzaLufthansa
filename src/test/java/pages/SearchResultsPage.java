@@ -25,6 +25,9 @@ public class SearchResultsPage {
     }
 
     public void selectFirstFlight() {
-        availableFlights.get(0).click();
+        if (!availableFlights.isEmpty()){
+            availableFlights.get(0).click();
+        }
+
     }
 }

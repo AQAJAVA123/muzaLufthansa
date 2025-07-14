@@ -9,7 +9,9 @@ import java.time.Duration;
 
 public class BaseTest {
     protected WebDriver driver;
-    protected final String BASE_URL = "https://www.united.com";
+    protected static final String BASE_URL = "https://www.united.com";
+    protected static final String FROM_CITY = "Frankfurt";
+    protected static final String TO_CITY = "Albany";
 
     @BeforeSuite
     public void setUpClass() {

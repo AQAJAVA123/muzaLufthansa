@@ -7,8 +7,6 @@ import pages.HomePage;
 import pages.SearchResultsPage;
 
 import static org.testng.Assert.assertTrue;
-import static tests.SearchFlightTests.FROM_CITY;
-import static tests.SearchFlightTests.TO_CITY;
 
 public class BookingFlowTests extends BaseTest {
     private HomePage homePage;
